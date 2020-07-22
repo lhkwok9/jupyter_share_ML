@@ -1,0 +1,596 @@
+model-1595162404
+
+model-1595163253
+
+model-1595175808
+
+model-1595177614
+Net(
+  (conv1): Conv2d(1, 64, kernel_size=(4, 4), stride=(1, 1))
+  (pool1): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (drop1): Dropout(p=0.15, inplace=False)
+  (conv2): Conv2d(64, 128, kernel_size=(4, 4), stride=(1, 1))
+  (pool2): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (drop2): Dropout(p=0.15, inplace=False)
+  (fc1): Linear(in_features=12800, out_features=64, bias=True)
+  (drop3): Dropout(p=0.25, inplace=False)
+  (fc2): Linear(in_features=64, out_features=2, bias=True)
+) + optimizer = optim.Adam(net.parameters(), lr=0.001, weight_decay=1e-7)
+
+model-1595178044
+
+Net(
+  (conv1): Conv2d(1, 64, kernel_size=(3, 3), stride=(1, 1))
+  (pool1): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (drop1): Dropout(p=0.25, inplace=False)
+  (conv2): Conv2d(64, 128, kernel_size=(3, 3), stride=(1, 1))
+  (pool2): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (drop2): Dropout(p=0.25, inplace=False)
+  (fc1): Linear(in_features=15488, out_features=128, bias=True)
+  (drop3): Dropout(p=0.3, inplace=False)
+  (fc2): Linear(in_features=128, out_features=2, bias=True)
+) + Adam (
+Parameter Group 0
+    amsgrad: False
+    betas: (0.9, 0.999)
+    eps: 1e-08
+    lr: 0.001
+    weight_decay: 1e-08
+)
+
+model-1595178556
+
+Net(
+  (conv1): Conv2d(1, 64, kernel_size=(3, 3), stride=(1, 1))
+  (pool1): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (drop1): Dropout(p=0.2, inplace=False)
+  (conv2): Conv2d(64, 128, kernel_size=(3, 3), stride=(1, 1))
+  (pool2): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (drop2): Dropout(p=0.2, inplace=False)
+  (conv3): Conv2d(128, 256, kernel_size=(3, 3), stride=(1, 1))
+  (pool3): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (drop3): Dropout(p=0.2, inplace=False)
+  (fc1): Linear(in_features=4096, out_features=64, bias=True)
+  (drop4): Dropout(p=0.25, inplace=False)
+  (fc2): Linear(in_features=64, out_features=2, bias=True)
+) + Adam (
+Parameter Group 0
+    amsgrad: False
+    betas: (0.9, 0.999)
+    eps: 1e-08
+    lr: 0.001
+    weight_decay: 1e-08
+)
+
+model-1595179184 GD
+
+Net(
+  (conv1): Conv2d(1, 128, kernel_size=(3, 3), stride=(1, 1))
+  (pool1): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (drop1): Dropout(p=0.2, inplace=False)
+  (conv2): Conv2d(128, 64, kernel_size=(3, 3), stride=(1, 1))
+  (pool2): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (drop2): Dropout(p=0.2, inplace=False)
+  (conv3): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1))
+  (pool3): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (drop3): Dropout(p=0.2, inplace=False)
+  (fc1): Linear(in_features=1024, out_features=64, bias=True)
+  (drop4): Dropout(p=0.25, inplace=False)
+  (fc2): Linear(in_features=64, out_features=2, bias=True)
+) + Adam (
+Parameter Group 0
+    amsgrad: False
+    betas: (0.9, 0.999)
+    eps: 1e-08
+    lr: 0.001
+    weight_decay: 1e-08
+)
+
+model-1595224430
+
+Net(
+  (conv1): Conv2d(1, 128, kernel_size=(3, 3), stride=(1, 1))
+  (pool1): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (drop1): Dropout(p=0.2, inplace=False)
+  (conv2): Conv2d(128, 64, kernel_size=(3, 3), stride=(1, 1))
+  (pool2): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (drop2): Dropout(p=0.2, inplace=False)
+  (conv3): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1))
+  (pool3): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (drop3): Dropout(p=0.2, inplace=False)
+  (fc1): Linear(in_features=6400, out_features=64, bias=True)
+  (drop4): Dropout(p=0.25, inplace=False)
+  (fc2): Linear(in_features=64, out_features=2, bias=True)
+) + Adam (
+Parameter Group 0
+    amsgrad: False
+    betas: (0.9, 0.999)
+    eps: 1e-08
+    lr: 0.001
+    weight_decay: 1e-06
+)
+
+model-1595241569
+
+Net(
+  (conv1): Conv2d(1, 128, kernel_size=(3, 3), stride=(1, 1))
+  (pool1): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (drop1): Dropout(p=0.2, inplace=False)
+  (conv2): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1))
+  (pool2): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (drop2): Dropout(p=0.2, inplace=False)
+  (conv3): Conv2d(128, 64, kernel_size=(3, 3), stride=(1, 1))
+  (pool3): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (drop3): Dropout(p=0.2, inplace=False)
+  (fc1): Linear(in_features=6400, out_features=64, bias=True)
+  (drop4): Dropout(p=0.25, inplace=False)
+  (fc2): Linear(in_features=64, out_features=2, bias=True)
+) + Adam (
+Parameter Group 0
+    amsgrad: False
+    betas: (0.9, 0.999)
+    eps: 1e-08
+    lr: 0.001
+    weight_decay: 0
+)
+
+model-1595244457
+
+Net(
+  (conv1): Conv2d(1, 128, kernel_size=(3, 3), stride=(1, 1))
+  (pool1): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (drop1): Dropout(p=0.2, inplace=False)
+  (conv2): Conv2d(128, 64, kernel_size=(3, 3), stride=(1, 1))
+  (pool2): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (drop2): Dropout(p=0.2, inplace=False)
+  (conv3): Conv2d(64, 32, kernel_size=(3, 3), stride=(1, 1))
+  (pool3): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (drop3): Dropout(p=0.2, inplace=False)
+  (fc1): Linear(in_features=3200, out_features=64, bias=True)
+  (drop4): Dropout(p=0.25, inplace=False)
+  (fc2): Linear(in_features=64, out_features=2, bias=True)
+) + Adam (
+Parameter Group 0
+    amsgrad: False
+    betas: (0.9, 0.999)
+    eps: 1e-08
+    lr: 0.001
+    weight_decay: 1e-05
+)
+
+model-1595246081
+
+Net(
+  (conv1): Conv2d(1, 128, kernel_size=(5, 5), stride=(1, 1))
+  (pool1): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (drop1): Dropout(p=0.2, inplace=False)
+  (conv2): Conv2d(128, 64, kernel_size=(3, 3), stride=(1, 1))
+  (pool2): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (drop2): Dropout(p=0.2, inplace=False)
+  (conv3): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1))
+  (pool3): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (drop3): Dropout(p=0.2, inplace=False)
+  (fc1): Linear(in_features=6400, out_features=64, bias=True)
+  (drop4): Dropout(p=0.25, inplace=False)
+  (fc2): Linear(in_features=64, out_features=2, bias=True)
+) + Adam (
+Parameter Group 0
+    amsgrad: False
+    betas: (0.9, 0.999)
+    eps: 1e-08
+    lr: 0.001
+    weight_decay: 1e-05
+)
+
+model-1595247067
+
+Net(
+  (conv1): Conv2d(1, 64, kernel_size=(5, 5), stride=(1, 1))
+  (pool1): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (drop1): Dropout(p=0.2, inplace=False)
+  (conv2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1))
+  (pool2): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (drop2): Dropout(p=0.2, inplace=False)
+  (conv3): Conv2d(64, 32, kernel_size=(3, 3), stride=(1, 1))
+  (pool3): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (drop3): Dropout(p=0.2, inplace=False)
+  (fc1): Linear(in_features=3200, out_features=64, bias=True)
+  (drop4): Dropout(p=0.25, inplace=False)
+  (fc2): Linear(in_features=64, out_features=2, bias=True)
+) + Adam (
+Parameter Group 0
+    amsgrad: False
+    betas: (0.9, 0.999)
+    eps: 1e-08
+    lr: 0.001
+    weight_decay: 0
+)
+
+model-1595248151
+
+Net(
+  (conv1): Conv2d(1, 64, kernel_size=(3, 3), stride=(1, 1))
+  (pool1): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (drop1): Dropout(p=0.2, inplace=False)
+  (conv2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1))
+  (pool2): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (drop2): Dropout(p=0.2, inplace=False)
+  (conv3): Conv2d(64, 32, kernel_size=(3, 3), stride=(1, 1))
+  (pool3): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (drop3): Dropout(p=0.2, inplace=False)
+  (fc1): Linear(in_features=3200, out_features=64, bias=True)
+  (drop4): Dropout(p=0.25, inplace=False)
+  (fc2): Linear(in_features=64, out_features=2, bias=True)
+) + Adam (
+Parameter Group 0
+    amsgrad: False
+    betas: (0.9, 0.999)
+    eps: 1e-08
+    lr: 0.001
+    weight_decay: 0
+)
+
+model-1595249836
+
+Net(
+  (conv1): Conv2d(1, 64, kernel_size=(3, 3), stride=(1, 1))
+  (pool1): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (drop1): Dropout(p=0.2, inplace=False)
+  (conv2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1))
+  (pool2): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (drop2): Dropout(p=0.2, inplace=False)
+  (conv3): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1))
+  (pool3): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (drop3): Dropout(p=0.2, inplace=False)
+  (fc1): Linear(in_features=6400, out_features=64, bias=True)
+  (drop4): Dropout(p=0.25, inplace=False)
+  (fc2): Linear(in_features=64, out_features=2, bias=True)
+) + Adam (
+Parameter Group 0
+    amsgrad: False
+    betas: (0.9, 0.999)
+    eps: 1e-08
+    lr: 0.001
+    weight_decay: 0
+)
+
+model-1595251427
+
+Net(
+  (conv1): Conv2d(1, 64, kernel_size=(3, 3), stride=(1, 1))
+  (pool1): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (drop1): Dropout(p=0.2, inplace=False)
+  (conv2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1))
+  (pool2): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (drop2): Dropout(p=0.2, inplace=False)
+  (conv3): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1))
+  (pool3): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (drop3): Dropout(p=0.2, inplace=False)
+  (fc1): Linear(in_features=6400, out_features=64, bias=True)
+  (drop4): Dropout(p=0.2, inplace=False)
+  (fc2): Linear(in_features=64, out_features=32, bias=True)
+  (drop5): Dropout(p=0.25, inplace=False)
+  (fc3): Linear(in_features=32, out_features=2, bias=True)
+) + Adam (
+Parameter Group 0
+    amsgrad: False
+    betas: (0.9, 0.999)
+    eps: 1e-08
+    lr: 0.001
+    weight_decay: 0
+)
+
+model-1595254603
+
+Net(
+  (conv1): Conv2d(1, 128, kernel_size=(3, 3), stride=(1, 1))
+  (pool1): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (drop1): Dropout(p=0.1, inplace=False)
+  (conv2): Conv2d(128, 64, kernel_size=(3, 3), stride=(1, 1))
+  (pool2): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (drop2): Dropout(p=0.1, inplace=False)
+  (conv3): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1))
+  (pool3): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (drop3): Dropout(p=0.1, inplace=False)
+  (fc1): Linear(in_features=6400, out_features=64, bias=True)
+  (drop4): Dropout(p=0.1, inplace=False)
+  (fc2): Linear(in_features=64, out_features=32, bias=True)
+  (drop5): Dropout(p=0.15, inplace=False)
+  (fc3): Linear(in_features=32, out_features=2, bias=True)
+) + Adam (
+Parameter Group 0
+    amsgrad: False
+    betas: (0.9, 0.999)
+    eps: 1e-08
+    lr: 0.001
+    weight_decay: 1e-08
+)
+
+model-1595255673
+
+Net(
+  (conv1): Conv2d(1, 128, kernel_size=(3, 3), stride=(1, 1))
+  (pool1): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (drop1): Dropout(p=0.1, inplace=False)
+  (conv2): Conv2d(128, 64, kernel_size=(3, 3), stride=(1, 1))
+  (pool2): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (drop2): Dropout(p=0.1, inplace=False)
+  (conv3): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1))
+  (pool3): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (drop3): Dropout(p=0.1, inplace=False)
+  (fc1): Linear(in_features=6400, out_features=64, bias=True)
+  (drop4): Dropout(p=0.15, inplace=False)
+  (fc2): Linear(in_features=64, out_features=2, bias=True)
+) + Adam (
+Parameter Group 0
+    amsgrad: False
+    betas: (0.9, 0.999)
+    eps: 1e-08
+    lr: 0.001
+    weight_decay: 1e-08
+)
+
+model-1595256535
+
+Net(
+  (conv1): Conv2d(1, 128, kernel_size=(3, 3), stride=(1, 1))
+  (pool1): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (drop1): Dropout(p=0.2, inplace=False)
+  (conv2): Conv2d(128, 64, kernel_size=(3, 3), stride=(1, 1))
+  (pool2): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (drop2): Dropout(p=0.2, inplace=False)
+  (conv3): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1))
+  (pool3): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (drop3): Dropout(p=0.2, inplace=False)
+  (fc1): Linear(in_features=6400, out_features=64, bias=True)
+  (drop4): Dropout(p=0.25, inplace=False)
+  (fc2): Linear(in_features=64, out_features=2, bias=True)
+) + Adam (
+Parameter Group 0
+    amsgrad: False
+    betas: (0.9, 0.999)
+    eps: 1e-08
+    lr: 0.001
+    weight_decay: 1e-08
+)
+
+model-1595257669
+
+Net(
+  (conv1): Conv2d(1, 64, kernel_size=(3, 3), stride=(1, 1))
+  (pool1): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (drop1): Dropout2d(p=0.2, inplace=False)
+  (conv2): Conv2d(64, 128, kernel_size=(3, 3), stride=(1, 1))
+  (pool2): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (drop2): Dropout2d(p=0.2, inplace=False)
+  (conv3): Conv2d(128, 256, kernel_size=(3, 3), stride=(1, 1))
+  (pool3): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (drop3): Dropout2d(p=0.2, inplace=False)
+  (fc1): Linear(in_features=25600, out_features=64, bias=True)
+  (drop4): Dropout(p=0.25, inplace=False)
+  (fc2): Linear(in_features=64, out_features=2, bias=True)
+) + Adam (
+Parameter Group 0
+    amsgrad: False
+    betas: (0.9, 0.999)
+    eps: 1e-08
+    lr: 0.001
+    weight_decay: 1e-08
+)
+
+model-1595258259
+
+Net(
+  (conv1): Conv2d(1, 128, kernel_size=(3, 3), stride=(1, 1))
+  (pool1): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (drop1): Dropout2d(p=0.2, inplace=False)
+  (conv2): Conv2d(128, 256, kernel_size=(3, 3), stride=(1, 1))
+  (pool2): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (drop2): Dropout2d(p=0.2, inplace=False)
+  (conv3): Conv2d(256, 512, kernel_size=(3, 3), stride=(1, 1))
+  (pool3): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (drop3): Dropout2d(p=0.2, inplace=False)
+  (fc1): Linear(in_features=51200, out_features=128, bias=True)
+  (drop4): Dropout(p=0.25, inplace=False)
+  (fc2): Linear(in_features=128, out_features=2, bias=True)
+) + Adam (
+Parameter Group 0
+    amsgrad: False
+    betas: (0.9, 0.999)
+    eps: 1e-08
+    lr: 0.001
+    weight_decay: 1e-08
+)
+
+model-1595260316
+
+Net(
+  (conv1): Conv2d(1, 128, kernel_size=(3, 3), stride=(1, 1))
+  (pool1): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (drop1): Dropout2d(p=0.2, inplace=False)
+  (conv2): Conv2d(128, 256, kernel_size=(3, 3), stride=(1, 1))
+  (pool2): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (drop2): Dropout2d(p=0.2, inplace=False)
+  (conv3): Conv2d(256, 512, kernel_size=(3, 3), stride=(1, 1))
+  (pool3): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (drop3): Dropout2d(p=0.2, inplace=False)
+  (fc1): Linear(in_features=51200, out_features=128, bias=True)
+  (drop4): Dropout(p=0.25, inplace=False)
+  (fc2): Linear(in_features=128, out_features=64, bias=True)
+  (drop5): Dropout(p=0.25, inplace=False)
+  (fc3): Linear(in_features=64, out_features=2, bias=True)
+) + Adam (
+Parameter Group 0
+    amsgrad: False
+    betas: (0.9, 0.999)
+    eps: 1e-08
+    lr: 0.001
+    weight_decay: 1e-08
+)
+
+model-1595322813
+
+Net(
+  (conv1): Conv2d(1, 32, kernel_size=(5, 5), stride=(1, 1))
+  (pool1): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (drop1): Dropout2d(p=0.1, inplace=False)
+  (conv2): Conv2d(32, 64, kernel_size=(5, 5), stride=(1, 1))
+  (pool2): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (drop2): Dropout2d(p=0.15, inplace=False)
+  (conv3): Conv2d(64, 64, kernel_size=(5, 5), stride=(1, 1))
+  (pool3): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (drop3): Dropout2d(p=0.15, inplace=False)
+  (fc1): Linear(in_features=5184, out_features=2, bias=True)
+) + Adam (
+Parameter Group 0
+    amsgrad: False
+    betas: (0.9, 0.999)
+    eps: 1e-08
+    lr: 0.001
+    weight_decay: 1e-08
+)
+
+model-1595323500
+
+Net(
+  (conv1): Conv2d(1, 32, kernel_size=(5, 5), stride=(1, 1))
+  (pool1): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (drop1): Dropout2d(p=0.1, inplace=False)
+  (conv2): Conv2d(32, 64, kernel_size=(5, 5), stride=(1, 1))
+  (pool2): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (drop2): Dropout2d(p=0.15, inplace=False)
+  (conv3): Conv2d(64, 128, kernel_size=(5, 5), stride=(1, 1))
+  (pool3): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (drop3): Dropout2d(p=0.15, inplace=False)
+  (fc1): Linear(in_features=10368, out_features=2, bias=True)
+) + Adam (
+Parameter Group 0
+    amsgrad: False
+    betas: (0.9, 0.999)
+    eps: 1e-08
+    lr: 0.001
+    weight_decay: 1e-08
+)
+
+model-1595326418
+
+Net(
+  (conv1): Conv2d(3, 64, kernel_size=(5, 5), stride=(1, 1))
+  (pool1): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (drop1): Dropout2d(p=0.1, inplace=False)
+  (conv2): Conv2d(64, 64, kernel_size=(5, 5), stride=(1, 1))
+  (pool2): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (drop2): Dropout2d(p=0.15, inplace=False)
+  (conv3): Conv2d(64, 128, kernel_size=(5, 5), stride=(1, 1))
+  (pool3): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (drop3): Dropout2d(p=0.15, inplace=False)
+  (fc1): Linear(in_features=512, out_features=2, bias=True)
+) + Adam (
+Parameter Group 0
+    amsgrad: False
+    betas: (0.9, 0.999)
+    eps: 1e-08
+    lr: 0.001
+    weight_decay: 1e-08
+)
+
+model-1595327470
+
+Net(
+  (conv1): Conv2d(3, 128, kernel_size=(3, 3), stride=(1, 1))
+  (pool1): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (drop1): Dropout2d(p=0.15, inplace=False)
+  (conv2): Conv2d(128, 192, kernel_size=(3, 3), stride=(1, 1))
+  (pool2): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (drop2): Dropout2d(p=0.15, inplace=False)
+  (conv3): Conv2d(192, 256, kernel_size=(3, 3), stride=(1, 1))
+  (pool3): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (drop3): Dropout2d(p=0.15, inplace=False)
+  (fc1): Linear(in_features=4096, out_features=64, bias=True)
+  (drop4): Dropout(p=0.25, inplace=False)
+  (fc2): Linear(in_features=64, out_features=2, bias=True)
+) + Adam (
+Parameter Group 0
+    amsgrad: False
+    betas: (0.9, 0.999)
+    eps: 1e-08
+    lr: 0.001
+    weight_decay: 1e-08
+)
+
+model-1595328671
+
+Net(
+  (conv1): Conv2d(3, 64, kernel_size=(3, 3), stride=(1, 1))
+  (pool1): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (drop1): Dropout2d(p=0.1, inplace=False)
+  (conv2): Conv2d(64, 128, kernel_size=(3, 3), stride=(1, 1))
+  (conv4): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1))
+  (pool2): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (drop2): Dropout2d(p=0.1, inplace=False)
+  (conv3): Conv2d(128, 256, kernel_size=(3, 3), stride=(1, 1))
+  (conv5): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1))
+  (pool3): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (drop3): Dropout2d(p=0.1, inplace=False)
+  (fc1): Linear(in_features=2304, out_features=512, bias=True)
+  (drop4): Dropout(p=0.2, inplace=False)
+  (fc2): Linear(in_features=512, out_features=64, bias=True)
+  (drop5): Dropout(p=0.25, inplace=False)
+  (fc3): Linear(in_features=64, out_features=2, bias=True)
+) + Adam (
+Parameter Group 0
+    amsgrad: False
+    betas: (0.9, 0.999)
+    eps: 1e-08
+    lr: 0.001
+    weight_decay: 1e-08
+)
+
+model-1595331454
+
+Net(
+  (conv1): Conv2d(3, 64, kernel_size=(3, 3), stride=(1, 1))
+  (pool1): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (conv2): Conv2d(64, 128, kernel_size=(3, 3), stride=(1, 1))
+  (conv4): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1))
+  (pool2): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (conv3): Conv2d(128, 256, kernel_size=(3, 3), stride=(1, 1))
+  (conv5): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1))
+  (pool3): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (fc1): Linear(in_features=2304, out_features=512, bias=True)
+  (drop4): Dropout(p=0.2, inplace=False)
+  (fc2): Linear(in_features=512, out_features=64, bias=True)
+  (drop5): Dropout(p=0.25, inplace=False)
+  (fc3): Linear(in_features=64, out_features=2, bias=True)
+) + Adam (
+Parameter Group 0
+    amsgrad: False
+    betas: (0.9, 0.999)
+    eps: 1e-08
+    lr: 0.001
+    weight_decay: 1e-08
+)
+
+model-1595332147
+
+Net(
+  (conv1): Conv2d(3, 64, kernel_size=(3, 3), stride=(1, 1))
+  (pool1): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (conv2): Conv2d(64, 128, kernel_size=(3, 3), stride=(1, 1))
+  (pool2): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (conv3): Conv2d(128, 256, kernel_size=(3, 3), stride=(1, 1))
+  (pool3): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (fc1): Linear(in_features=4096, out_features=1024, bias=True)
+  (drop4): Dropout(p=0.1, inplace=False)
+  (fc2): Linear(in_features=1024, out_features=256, bias=True)
+  (drop5): Dropout(p=0.2, inplace=False)
+  (fc3): Linear(in_features=256, out_features=2, bias=True)
+) + Adam (
+Parameter Group 0
+    amsgrad: False
+    betas: (0.9, 0.999)
+    eps: 1e-08
+    lr: 0.001
+    weight_decay: 1e-08
+)
+
