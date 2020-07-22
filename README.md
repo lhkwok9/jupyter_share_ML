@@ -9,3 +9,4 @@
 2020-07-22
 - Files Uploaded
 - Bug in Crypto/bug.ipynb *solved* by referencing TF docs
+- Continue Neural Network from Scratch
